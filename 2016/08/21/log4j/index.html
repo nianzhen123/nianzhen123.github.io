@@ -1,0 +1,141 @@
+<!DOCTYPE HTML>
+<html>
+<head>
+  <meta charset="utf-8">
+  
+  <title>log4j | wangfeng</title>
+
+  
+  <meta name="author" content="wangfeng">
+  
+
+  
+  <meta name="description" content="log4j
+创建append 例如：创建基于控制台的append。 log4j.appender.stdout=org.apache.log4j.ConsoleAppender
+创建布局layout 例如：log4j.appender.stdout.layout=org.apache.log4j.P">
+  
+
+  
+  
+  <meta name="keywords" content="">
+  
+
+  <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+  <meta property="og:title" content="log4j"/>
+
+  <meta property="og:site_name" content="wangfeng"/>
+
+  
+  <meta property="og:image" content="/favicon.ico"/>
+  
+
+  <link href="/favicon.ico" rel="icon">
+  <link rel="alternate" href="/atom.xml" title="wangfeng" type="application/atom+xml">
+  <link rel="stylesheet" href="/css/style.css" media="screen" type="text/css">
+</head>
+
+
+<body>
+<div class="blog">
+  <div class="content">
+
+    <header>
+  <div class="site-branding">
+    <h1 class="site-title">
+      <a href="/">wangfeng</a>
+    </h1>
+    <p class="site-description"></p>
+  </div>
+  <nav class="site-navigation">
+    <ul>
+      
+        <li><a href="/">主页</a></li>
+      
+        <li><a href="/archives">归档</a></li>
+      
+        <li><a href="/about">关于</a></li>
+      
+        <li><a href="/tools">网络工具</a></li>
+      
+        <li><a href="/share">资源共享</a></li>
+      
+    </ul>
+  </nav>
+</header>
+
+    <main class="site-main posts-loop">
+    <article>
+
+  
+    
+    <h3 class="article-title"><span>log4j</span></h3>
+    
+  
+
+  <div class="article-top-meta">
+    <span class="posted-on">
+      <a href="/2016/08/21/log4j/" rel="bookmark">
+        <time class="entry-date published" datetime="2016-08-21T08:18:27.000Z">
+          2016-08-21
+        </time>
+      </a>
+    </span>
+  </div>
+
+
+  
+
+  <div class="article-content">
+    <div class="entry">
+      
+        <h2 id="log4j"><a href="#log4j" class="headerlink" title="log4j"></a>log4j</h2><ol>
+<li>创建append<br> 例如：创建基于控制台的append。<br> log4j.appender.stdout=org.apache.log4j.ConsoleAppender</li>
+<li>创建布局layout<br> 例如：log4j.appender.stdout.layout=org.apache.log4j.PatternLayout</li>
+<li>说明使用什么用的格式<br> 例如：log4j.appender.stdout.layout.ConversionPattern=%n%-d{yyyy-MM-dd HH:mm:ss}%n[%p]-[Thread: %t]-[%C.%M()]: %m%n</li>
+<li><p>说明什么情况下输出日志<br>例如：log4j.rootLogger=debug, stdout, file<br>意思是：第一个说明是日志级别，后面的就是你自己配置的append。<br>rootLogger是根目录的logger,项目的classpath目录就是根目录</p>
+<p>log4j.logger.org.wang.controller = DEBUG,fout<br>说明只会在org.wang.controller这个包中找</p>
+</li>
+</ol>
+
+      
+    </div>
+
+  </div>
+
+  <div class="article-footer">
+    <div class="article-meta pull-left">
+
+    
+
+    
+
+    </div>
+
+    
+  </div>
+</article>
+
+  
+
+
+
+    </main>
+
+    <footer class="site-footer">
+  <p class="site-info">
+    Proudly powered by <a href="https://hexo.io/" target="_blank">Hexo</a> and
+    Theme by <a href="https://github.com/CodeDaraW/Hacker" target="_blank">Hacker</a>
+    </br>
+    
+    &copy; 2016 wangfeng
+    
+  </p>
+</footer>
+    
+  </div>
+</div>
+</body>
+</html>

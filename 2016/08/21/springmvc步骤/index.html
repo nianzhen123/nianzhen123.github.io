@@ -3,21 +3,27 @@
 <head>
   <meta charset="utf-8">
   
-  <title>wangfeng</title>
+  <title>springmvc步骤 | wangfeng</title>
 
   
   <meta name="author" content="wangfeng">
   
 
   
+  <meta name="description" content="建一个springmvc的项目
+在web.xml 文件里配置如下123456789&amp;lt;servlet&amp;gt;    &amp;lt;servlet-name&amp;gt;dispatcher&amp;lt;/servlet-name&amp;gt;    &amp;lt;servlet-class&amp;gt;org.springfram">
+  
 
+  
+  
+  <meta name="keywords" content="">
   
 
   <meta id="viewport" name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, minimum-scale=1, user-scalable=no, minimal-ui">
   <meta name="apple-mobile-web-app-capable" content="yes">
   <meta name="apple-mobile-web-app-status-bar-style" content="black">
 
-  
+  <meta property="og:title" content="springmvc步骤"/>
 
   <meta property="og:site_name" content="wangfeng"/>
 
@@ -60,65 +66,11 @@
 </header>
 
     <main class="site-main posts-loop">
-    
-  <article>
+    <article>
 
   
     
-    <h3 class="article-title"><a href="/2016/08/21/log4j/"><span>log4j</span></a></h3>
-    
-  
-
-  <div class="article-top-meta">
-    <span class="posted-on">
-      <a href="/2016/08/21/log4j/" rel="bookmark">
-        <time class="entry-date published" datetime="2016-08-21T08:18:27.000Z">
-          2016-08-21
-        </time>
-      </a>
-    </span>
-  </div>
-
-
-  
-
-  <div class="article-content">
-    <div class="entry">
-      
-        <h2 id="log4j"><a href="#log4j" class="headerlink" title="log4j"></a>log4j</h2><ol>
-<li>创建append<br> 例如：创建基于控制台的append。<br> log4j.appender.stdout=org.apache.log4j.ConsoleAppender</li>
-<li>创建布局layout<br> 例如：log4j.appender.stdout.layout=org.apache.log4j.PatternLayout</li>
-<li>说明使用什么用的格式<br> 例如：log4j.appender.stdout.layout.ConversionPattern=%n%-d{yyyy-MM-dd HH:mm:ss}%n[%p]-[Thread: %t]-[%C.%M()]: %m%n</li>
-<li><p>说明什么情况下输出日志<br>例如：log4j.rootLogger=debug, stdout, file<br>意思是：第一个说明是日志级别，后面的就是你自己配置的append。<br>rootLogger是根目录的logger,项目的classpath目录就是根目录</p>
-<p>log4j.logger.org.wang.controller = DEBUG,fout<br>说明只会在org.wang.controller这个包中找</p>
-</li>
-</ol>
-
-      
-    </div>
-
-  </div>
-
-  <div class="article-footer">
-    <div class="article-meta pull-left">
-
-    
-
-    
-
-    </div>
-
-    
-  </div>
-</article>
-
-
-
-  <article>
-
-  
-    
-    <h3 class="article-title"><a href="/2016/08/21/springmvc步骤/"><span>springmvc步骤</span></a></h3>
+    <h3 class="article-title"><span>springmvc步骤</span></h3>
     
   
 
@@ -199,119 +151,10 @@
   </div>
 </article>
 
-
-
-  <article>
-
-  
-    
-    <h3 class="article-title"><a href="/2016/08/21/hexo命令/"><span>hexo</span></a></h3>
-    
   
 
-  <div class="article-top-meta">
-    <span class="posted-on">
-      <a href="/2016/08/21/hexo命令/" rel="bookmark">
-        <time class="entry-date published" datetime="2016-08-21T08:09:55.000Z">
-          2016-08-21
-        </time>
-      </a>
-    </span>
-  </div>
 
 
-  
-
-  <div class="article-content">
-    <div class="entry">
-      
-        <h3 id="常用命令"><a href="#常用命令" class="headerlink" title="常用命令"></a>常用命令</h3><p>hexo s -g  本地预览<br>hexo d -g 发布到远程github上预览<br>hexo n “new name” 发布新文章</p>
-<p>删除文章</p>
-<ol>
-<li>先在source_posts目录下删除文章</li>
-<li>hexo clean</li>
-<li>hexo s -g</li>
-</ol>
-
-      
-    </div>
-
-  </div>
-
-  <div class="article-footer">
-    <div class="article-meta pull-left">
-
-    
-
-    
-
-    </div>
-
-    
-  </div>
-</article>
-
-
-
-  <article>
-
-  
-    
-    <h3 class="article-title"><a href="/2016/08/21/hello-world/"><span>Hello World</span></a></h3>
-    
-  
-
-  <div class="article-top-meta">
-    <span class="posted-on">
-      <a href="/2016/08/21/hello-world/" rel="bookmark">
-        <time class="entry-date published" datetime="2016-08-21T03:38:08.019Z">
-          2016-08-21
-        </time>
-      </a>
-    </span>
-  </div>
-
-
-  
-
-  <div class="article-content">
-    <div class="entry">
-      
-        <p>Welcome to <a href="https://hexo.io/" target="_blank" rel="external">Hexo</a>! This is your very first post. Check <a href="https://hexo.io/docs/" target="_blank" rel="external">documentation</a> for more info. If you get any problems when using Hexo, you can find the answer in <a href="https://hexo.io/docs/troubleshooting.html" target="_blank" rel="external">troubleshooting</a> or you can ask me on <a href="https://github.com/hexojs/hexo/issues" target="_blank" rel="external">GitHub</a>.</p>
-<h2 id="Quick-Start"><a href="#Quick-Start" class="headerlink" title="Quick Start"></a>Quick Start</h2><h3 id="Create-a-new-post"><a href="#Create-a-new-post" class="headerlink" title="Create a new post"></a>Create a new post</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo new <span class="string">"My New Post"</span></div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/writing.html" target="_blank" rel="external">Writing</a></p>
-<h3 id="Run-server"><a href="#Run-server" class="headerlink" title="Run server"></a>Run server</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo server</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/server.html" target="_blank" rel="external">Server</a></p>
-<h3 id="Generate-static-files"><a href="#Generate-static-files" class="headerlink" title="Generate static files"></a>Generate static files</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo generate</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/generating.html" target="_blank" rel="external">Generating</a></p>
-<h3 id="Deploy-to-remote-sites"><a href="#Deploy-to-remote-sites" class="headerlink" title="Deploy to remote sites"></a>Deploy to remote sites</h3><figure class="highlight bash"><table><tr><td class="gutter"><pre><div class="line">1</div></pre></td><td class="code"><pre><div class="line">$ hexo deploy</div></pre></td></tr></table></figure>
-<p>More info: <a href="https://hexo.io/docs/deployment.html" target="_blank" rel="external">Deployment</a></p>
-
-      
-    </div>
-
-  </div>
-
-  <div class="article-footer">
-    <div class="article-meta pull-left">
-
-    
-
-    
-
-    </div>
-
-    
-  </div>
-</article>
-
-
-
-
-<nav class="pagination">
-  
-  
-</nav>
     </main>
 
     <footer class="site-footer">
